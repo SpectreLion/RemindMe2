@@ -11,7 +11,7 @@ export default class TaskHeader extends Component{
     super(props);
     //TODO: Define state
   }
-  
+
  generateDate(){
    const daysOfTheWeek = ['Domingo','Lunes','Martes', 'Miércoles', 'Jueves','Viernes','Sábado'],
          months = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
@@ -22,7 +22,7 @@ export default class TaskHeader extends Component{
          year = currentDate.getFullYear()
          date = currentDate.getDate();
 
-         return`${day} de ${month} ${year}`.toUpperCase();
+         return`${day} ${date} de ${month} ${year}`.toUpperCase();
  }
   render(){
     return(
@@ -35,7 +35,7 @@ export default class TaskHeader extends Component{
   }
 }
 
-const style = StyleSheet.create({
+const styles = StyleSheet.create({
   headerContainer: {
     backgroundColor: 'blue',
     flex: 1,
