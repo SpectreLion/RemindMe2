@@ -55,6 +55,7 @@ export default class TaskScreen extends Component<props> {
     tasks.push(newTask);
     //ACTUALZIAR EL ESTADO
     this.setState({tasks});
+    this.hideModal();
   }
 
   updateTask(targeredId){
